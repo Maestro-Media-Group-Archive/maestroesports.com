@@ -7,9 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/third-party/fullpage.css" />
-    <script src="assets/js/third-paty/fullpage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/third-party/fullpage.js"></script>
+
+    <script type="text/javascript">
+		$(document).ready(function() {
+		    $('#fullpage').fullpage({
+				'verticalCentered': false,
+				navigation: true
+			});
+		});
+    </script>
+    
 </head>
 <body>
-    
+    <div id="fullpage">
+        <div class="section" id="home">
+            <div class="logo-right"><img src="assets/img/logo/rsz_logo_64.png" alt=""></div>
+            <div class="info-box">
+            <h2>We are<br><strong>Maestro Esports</strong></h2>          
+            <p>
+                Maestro is a <strong>value driven</strong>,<strong>focoused</strong> and <strong>ambitious</strong> esports<br>
+                organisation based in the netherlands, taking the industry by storm.
+            </p>
+            </div>
+            <div class="read-more">
+            <button class="button button-blue">READ MORE</button>
+         </div>
+    </div>
+
+        <div class="section" id="intro">
+            
+        </div>
+
+        <div class="section" id="article">
+            
+        </div>
+
+        <div class="section" id="footer">
+            
+        </div>
+
+        
+    </div>
 </body>
 </html>
