@@ -14,9 +14,14 @@ body {
 
 p {
     color: #c5c7c8;
-    font-size: 19px;   
+    font-size: 19px; 
+    letter-spacing: 1px;  
 }
 
+h1 {
+    color: black;
+    font-size: 40px;
+}
 h2 {
     color: white;
     font-size: 48px;
@@ -26,6 +31,10 @@ h2 {
     font-size:40px;
 }
 
+.black {
+    color: black;
+    letter-spacing: 1px;
+}
 /* Elements */
 button{
     background-color: black;
@@ -38,9 +47,23 @@ button{
     font-size: 16px;
     
 }
+
+.button-2 {
+    color: black;
+    text-decoration: underline;
+    text-align: right;
+    font-weight: bold;
+    text-underline-position: under
+}
 .button-blue {
     background-color: #5790ff;
     font-weight: bold;
+}
+
+.button-orange {
+    background-color: #ffc569;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 /* CSS Grids Position */
@@ -56,6 +79,27 @@ button{
     margin: 0;
 }
 
+#intro {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr) ;
+    min-height:100%;
+}
+
+.intro {
+    grid-column: 3/9;
+    grid-row: 6;
+    justify-self: left;
+}
+
+.intro-right {
+    grid-column: 9;
+    grid-row: 6;
+}
+.intro-right-1 {
+    grid-column: 10;
+    grid-row: 6;
+}
 .content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
