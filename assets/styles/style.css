@@ -27,6 +27,13 @@ h2 {
     font-size: 48px;
     font-family: Karla;
 }
+
+a{
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+    
+}
 .sub-title {
     font-size:40px;
 }
@@ -34,6 +41,10 @@ h2 {
 .black {
     color: black;
     letter-spacing: 1px;
+}
+
+.text-small{
+    font-size: 17px;
 }
 /* Elements */
 button{
@@ -86,6 +97,52 @@ button{
     min-height:100%;
 }
 
+#article {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr) ;
+    min-height:100%; 
+}
+
+.article {
+    background-image: URL('../img/bg/home-bg.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/6;
+    grid-row: 1/13; 
+}
+
+#footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr) ;
+    min-height:100%; 
+}
+
+.footer {
+    background-image: URL('../img/misc/R6_FINALS_BENELUX-45.jpeg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/13;
+    grid-row: 1/10; 
+}
+
+.footer-bottom {
+    background-color: #1d1d1d;
+    grid-column: 1/13;
+    grid-row: 10/13;
+}
+
+.motto {
+    grid-column:5/9;
+    grid-row: 5/13;
+    justify-content: center;
+}
+
+.footer-content {
+    grid-column: 3/13;
+    grid-row: 11/12;
+}
 .intro {
     grid-column: 3/9;
     grid-row: 6;
