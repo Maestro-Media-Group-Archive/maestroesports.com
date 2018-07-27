@@ -21,19 +21,42 @@ p {
 h1 {
     color: black;
     font-size: 40px;
+    margin: 0;
 }
 h2 {
     color: white;
-    font-size: 48px;
+    font-size: 60px;
     font-family: Karla;
+    font-weight: normal;
 }
 
+h3 {
+    margin: 0;
+    color: black;
+    font-size: 25px;
+    font-weight: normal;
+    font-family: Karla;
+
+}
 a{
     font-size: 19px;
     color: white;
     text-decoration: none;
     
 }
+
+.article-description {
+    color: #c5c7c8;
+    font-size: 16px; 
+    letter-spacing: 1px;
+}
+
+.article-icon-text {
+    color: black;
+    font-size: 14px; 
+    letter-spacing: 1px;
+}
+
 .sub-title {
     font-size:40px;
 }
@@ -60,6 +83,15 @@ button{
 }
 
 .button-2 {
+    color: black;
+    text-decoration: underline;
+    text-align: right;
+    font-weight: bold;
+    text-underline-position: under
+}
+
+.button-see-more {
+    margin: 0;
     color: black;
     text-decoration: underline;
     text-align: right;
@@ -112,6 +144,34 @@ button{
     grid-row: 1/13; 
 }
 
+.article-page-header {
+    grid-column: 7/8;
+    grid-row: 2/3;
+}
+
+.see-more {
+    grid-column: 10/12;
+    grid-row: 2/3;   
+}
+
+.article-pos-1 {
+    grid-column: 7/9;
+    grid-row: 4/8;
+    margin: 0;
+}
+
+.article-pos-2 {
+    grid-column: 10/12;
+    grid-row: 4/8;
+    margin: 0;
+}
+
+.article-pos-3 {
+    grid-column: 10/12;
+    grid-row: 8/12;
+    margin: 0;
+    padding-top: 24px;
+}
 #footer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
